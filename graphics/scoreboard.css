@@ -1,0 +1,34 @@
+body {
+	font-family: Staatliches, sans-serif;
+	background: black;
+}
+
+#scoreboard {
+	display: flex;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -82px;
+}
+
+.score {
+	color: white;
+	font-size: 60px;
+
+	height: 80px;
+	width: 80px;
+
+	text-align: center;
+	line-height: 80px;
+}
+
+#team1 {
+	background: #ff7442;
+	border-right: 4px solid white;
+	border-radius: 10% 0 0 10%;
+}
+
+#team2 {
+	background: #3c3cff;
+	border-radius: 0 10% 10% 0;
+}

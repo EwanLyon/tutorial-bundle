@@ -1,0 +1,36 @@
+body {
+	font-family: Staatliches, sans-serif;
+	background: red;
+}
+
+#nameplate {
+	position: absolute;
+	top: 800px;
+	left: 175px;
+
+	display: flex;
+	flex-direction: column;
+
+	overflow: hidden;
+}
+
+.text {
+	background: white;
+	width: fit-content;
+	padding: 0 8px 0 15px;
+
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#name {
+	font-size: 75px;
+	margin-bottom: 3px;
+	letter-spacing: 7px;
+	font-weight: bold;
+}
+
+#twitter {
+	font-size: 40px;
+	letter-spacing: 4px;
+}
