@@ -1,6 +1,6 @@
 # tutorial-bundle
 
-tutorial-bundle is a [NodeCG](http://github.com/nodecg/nodecg) bundle. 
+tutorial-bundle is a [NodeCG](http://github.com/nodecg/nodecg) bundle.
 
 You must install NodeCG to use this bundle.
 
@@ -15,4 +15,4 @@ Make sure you are in the `bundles` folder.
 
 ## Overview video
 
-https://youtu.be/uSWRcgD9NQQ
+<https://youtu.be/uSWRcgD9NQQ>
