@@ -11,8 +11,12 @@
     "",
     "nodecg-bundle"
   ],
+  "scripts": {
+    "postinstall": "include-nodecg postinstall",
+    "start": "include-nodecg start"
+  },
   "nodecg": {
-    "compatibleRange": "^1.1.1",
+    "compatibleRange": "^1.9.0",
     "dashboardPanels": [
       {
         "name": "score",
@@ -43,6 +47,8 @@
     ]
   },
   "dependencies": {
-    "gsap": "^3.6.0"
+    "gsap": "^3.6.0",
+    "include-nodecg": "^0.0.3",
+    "nodecg": "^1.9.0"
   }
 }
