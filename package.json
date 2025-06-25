@@ -12,8 +12,7 @@
     "nodecg-bundle"
   ],
   "scripts": {
-    "postinstall": "include-nodecg postinstall",
-    "start": "include-nodecg start"
+    "start": "nodecg start"
   },
   "nodecg": {
     "compatibleRange": "^1.9.0",
@@ -22,14 +21,14 @@
         "name": "score",
         "title": "Score",
         "width": 2,
-        "file": "score.html",
+        "file": "score-controls.html",
         "headerColor": "#525F78"
       },
       {
-        "name": "name",
-        "title": "Name",
+        "name": "lowerthird",
+        "title": "Lower third",
         "width": 2,
-        "file": "name.html",
+        "file": "lowerthird-controls.html",
         "headerColor": "#525F78"
       }
     ],
@@ -44,11 +43,16 @@
         "width": 1920,
         "height": 1080
       }
+    ],
+    "mount": [
+      {
+        "directory": "node_modules/gsap",
+        "endpoint": "node_modules/gsap"
+      }
     ]
   },
   "dependencies": {
     "gsap": "^3.6.0",
-    "include-nodecg": "^0.0.3",
-    "nodecg": "^1.9.0"
+    "nodecg": "^2.6.1"
   }
 }

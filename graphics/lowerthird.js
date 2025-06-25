@@ -1,22 +1,23 @@
-import {gsap} from '../node_modules/gsap/index.js';
+import { gsap } from "../node_modules/gsap/index.js";
 
-const nameplateEl = document.getElementById('nameplate')
-const nameEl = document.getElementById('name')
-const twitterEl = document.getElementById('twitter')
+const nameplateEl = document.getElementById("nameplate");
+const titleEl = document.getElementById("title");
+const subtitleEl = document.getElementById("subtitle");
 
-nodecg.listenFor('showLowerthird', (newVal) => {
-	nameEl.innerHTML = newVal.name;
-	twitterEl.innerHTML = newVal.twitter;
+nodecg.listenFor("showLowerthird", (newVal) => {
+	titleEl.innerHTML = newVal.title;
+	subtitleEl.innerHTML = newVal.subtitle;
 
 	const tl = gsap.timeline();
 
-	tl.from([nameplateEl, nameEl, twitterEl], 1, {width: 0});
+	tl.from([nameplateEl, titleEl, subtitleEl], 1, { width: 0 });
 
-	tl.to([nameplateEl, nameEl, twitterEl], 1, {width: 0}, "+=4");
+	tl.to([nameplateEl, titleEl, subtitleEl], 1, { width: 0 }, "+=4");
 
 	tl.call(() => {
-		nameEl.innerHTML = "";
-		twitterEl.innerHTML = "";
-	})
-	tl.set([nameplateEl, nameEl, twitterEl], {width: ""})
-})
+		titleEl.innerHTML = "";
+		subtitleEl.innerHTML = "";
+	});
+
+	tl.set([nameplateEl, titleEl, subtitleEl], { width: "" });
+});

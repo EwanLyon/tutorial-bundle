@@ -1,4 +1,10 @@
 node_modules
 coverage
 bower_components
+
+# NodeCG
 .nodecg
+/db
+/logs
+/assets
+/cfg
